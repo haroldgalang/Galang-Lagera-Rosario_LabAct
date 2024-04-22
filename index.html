@@ -13,7 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Kaisei+Tokumin&family=Permanent+Marker&display=swap"
         rel="stylesheet">
-
+    <link rel="preconnect" href="style.css" crossorigin>
+    
     <title>MonoGodz | Home</title>
 </head>
 
@@ -26,11 +27,12 @@
                 <div class="caption center-align">
                     <img src="img/galang.png" alt="" class="circle responsive-img" style="height: 100px; width: 100px;">
                     <h4 class="light grey-text text-lighten-3">Harold</h4>
-                    <p class="flow-text" style="font-weight: 10;">I'm a visual designer, front-end developer, and an aspiring music producer.
+                    <p class="flow-text" style="font-weight: 10;">I'm a visual designer, front-end developer, and an
+                        aspiring music producer.
                         See About Us page for more info</p>
                 </div>
-
             </li>
+
             <li>
                 <img class="responsive-img" src="img/2.png">
                 <div class="caption center-align">
@@ -41,6 +43,7 @@
                         See About Us page for more info</p>
                 </div>
             </li>
+
             <li>
                 <img class="responsive-img" src="img/3.png">
                 <div class="caption center-align">
@@ -52,7 +55,6 @@
             </li>
         </ul>
     </div>
-
 
     <nav class="navbar-fixed">
         <div class="nav-wrapper grey darken-4 z-depth-2">
@@ -72,18 +74,26 @@
                 <li><a href="about.html">About Us</a></li>
             </ul>
             <ul class="left hide-on-med-and-down">
-                <li><a href=""><i class="material-icons">menu</i></a></li>
-                <ul>
+                <li><a href="#"><i class="material-icons">menu</i></a></li>
+            </ul>
+            <ul class="hide-on-large-only">
+                <li><a class='dropdown-trigger' href='#' data-target='dropdown1'><i
+                            class="material-icons">arrow_drop_down</i></a></li>
+            </ul>
         </div>
     </nav>
+
+    <ul id='dropdown1' class='dropdown-content grey darken-4 white-text'>
+        <li class="active red"><a href="index.html">Home</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="about.html">About Us</a></li>
+    </ul>
 
     <header>
         <div class="container">
             <h1>Home</h1>
         </div>
     </header>
-
-    <section class="block"></section>
 
     <div class="card red darken-1">
         <div class="card-content white-text container">
@@ -114,9 +124,6 @@
                 out to us.</blockquote>
         </div>
     </div>
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Compiled and minified JavaScript -->

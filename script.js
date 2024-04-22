@@ -2,8 +2,9 @@ $(document).ready(function () {
     $('.slider').slider({
         height: 450,
         indicators: false,
-        interval: 6000
+        intervals: 6000
     });
+    $('.dropdown-trigger').dropdown();
 });
 
 document.addEventListener("DOMContentLoaded", function () {

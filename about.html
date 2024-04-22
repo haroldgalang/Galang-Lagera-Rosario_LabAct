@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Kaisei+Tokumin&family=Permanent+Marker&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="style.css">
 
     <title>MonoGodz | About Us</title>
 </head>
@@ -32,7 +33,6 @@
         </ul>
     </div>
 
-
     <nav class="navbar-fixed">
         <div class="nav-wrapper grey darken-4 z-depth-2">
             <a href="#!" class="brand-logo red-text center">
@@ -47,14 +47,24 @@
                 </div>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                <li class="active red"><a href="about.html">About Us</a></li>
+                <li class="active red"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
             <ul class="left hide-on-med-and-down">
-                <li><a href=""><i class="material-icons">menu</i></a></li>
-                <ul>
+                <li><a href="#"><i class="material-icons">menu</i></a></li>
+            </ul>
+            <ul class="hide-on-large-only">
+                <li><a class='dropdown-trigger' href='#' data-target='dropdown1'><i
+                            class="material-icons">arrow_drop_down</i></a></li>
+            </ul>
         </div>
     </nav>
+
+    <ul id='dropdown1' class='dropdown-content grey darken-4 white-text'>
+        <li><a href="index.html">Home</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li class="active red"><a href="about.html">About Us</a></li>
+    </ul>
 
     <header>
         <div class="container">
